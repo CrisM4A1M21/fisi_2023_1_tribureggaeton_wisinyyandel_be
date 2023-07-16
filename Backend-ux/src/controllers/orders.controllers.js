@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const createOrder = async (req, res)=>{
 
-    const url = "http://localhost:3000/ne-gestion-pedidos/servicio-al-cliente/v1/guardar-pedidos";
+    const url = "http://localhost:3000/ne-gestion-datos-entregas/servicio-al-cliente/v1/guardar-datos-entregas";
 
     const {nro_boleta, nombre_cliente, telefono, delivery, fecha_entrega, direccion, monto_cliente} = req.body;
 

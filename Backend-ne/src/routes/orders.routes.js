@@ -3,6 +3,6 @@ import {createOrder} from '../controllers/orders.controllers.js';
 
 const router = Router();
 
-router.post('/guardar-pedidos', createOrder);
+router.post('/guardar-datos-entregas', createOrder);
 
 export default router;

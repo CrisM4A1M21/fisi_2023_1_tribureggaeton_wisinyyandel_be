@@ -12,9 +12,9 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
-app.use('/ux-productos/servicio-al-cliente/v1', productRoute);
-app.use('/ux-gestion-boletas/servicio-al-cliente/v1', voucherRoute);
-app.use('/ux-gestion-pedidos/servicio-al-cliente/v1', orderRoute);
+app.use('/ux-productos/tc/servicio-al-cliente/v1', productRoute);
+app.use('/ux-gestion-compras/tc/servicio-al-cliente/v1', voucherRoute);
+app.use('/ux-gestion-datos-entregas/tc/servicio-al-cliente/v1', orderRoute);
 
 app.use((req, res, next)=>{
     res.status(404).send('Esta pagina no existe');

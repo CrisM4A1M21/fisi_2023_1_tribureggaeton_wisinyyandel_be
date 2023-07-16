@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {pool} from '../database.js';
 
 export const createVoucher = async (req, res) =>{
